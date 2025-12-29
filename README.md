@@ -13,6 +13,7 @@
 [![YouTube](https://img.shields.io/badge/▶️%20YouTube-Video-red)](https://youtu.be/Vurjdwa_y38) 
 [![ModelScope Model](https://img.shields.io/badge/🤖%20ModelScope-Model-orange)](https://modelscope.cn/collections/Daniellesry/DKT) 
 [![ModelScope Dataset](https://img.shields.io/badge/🤖%20ModelScope-Dataset-orange)](https://modelscope.cn/datasets/Daniellesry/TransPhy3D/files) 
+<a href="#"> <img src="https://visitor-badge.laobi.icu/badge?page_id=Daniellli.DKT" alt="Visitors"></a>
 [![License](https://img.shields.io/badge/License-Apache--2.0-929292)](https://www.apache.org/licenses/LICENSE-2.0) 
 </div>
  
@@ -44,7 +45,15 @@ Our pretrained models are available on the huggingface hub:
   <tbody>
     <tr>
       <td>DKT-Depth-1-3B</td>
-      <td><a href="https://huggingface.co/Daniellesry/DKT-Depth-1-3B" target="_blank"><code>Daniellesry/DKT-Depth-1-3B</code><a></td>
+      <td><a href="https://huggingface.co/Daniellesry/DKT-Depth-1-3B-v1.1" target="_blank"><code>DKT-Depth-1-3B-v1.1</code><a></td>
+    </tr>
+    <tr>
+      <td>DKT-Depth-14B</td>
+      <td><a href="https://huggingface.co/Daniellesry/DKT-Depth-14B" target="_blank"><code>DKT-Depth-14B</code><a></td>
+    </tr>
+    <tr>
+      <td>DKT-Normal-14B</td>
+      <td><a href="https://huggingface.co/Daniellesry/DKT-Normal-14B" target="_blank"><code>DKT-Normal-14B</code><a></td>
     </tr>
   </tbody>
 </table>
@@ -90,11 +99,17 @@ save_video(prediction['colored_depth_map'], output_path, fps=25)
 
 ```
 
-## 💗 Ackownledge
-Our code is based on recent fantastic works including [MoGe](https://github.com/microsoft/MoGe), [WAN](https://github.com/Wan-Video/Wan2.1), and [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio). 
-We sincerely thank the authors for their excellent contributions. Huge thanks!
 
 ## 📜 Citation
 ```
 ...
 ```
+
+
+## 💗 Ackownledge
+Our code is based on recent fantastic works including [MoGe](https://github.com/microsoft/MoGe), [WAN](https://github.com/Wan-Video/Wan2.1), and [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio). 
+We sincerely thank the authors for their excellent contributions. Huge thanks!
+
+
+## 📧 Contact
+If you have any questions, please feel free to contact Shaocong Xu <b>(daniellesry at gmail.com)</b>.
