@@ -5,7 +5,7 @@
 
 <div align="center">
 
-
+[![Paper](https://img.shields.io/badge/arXiv-PDF-b31b1b)](https://arxiv.org/abs/2512.23705) 
 [![Website](https://raw.githubusercontent.com/prs-eth/Marigold/main/doc/badges/badge-website.svg)](https://daniellli.github.io/projects/DKT/) 
 [![Hugging Face Space](https://img.shields.io/badge/🤗%20Hugging%20Face%20-Space-yellow)](https://huggingface.co/spaces/Daniellesry/DKT) 
 [![Hugging Face Model](https://img.shields.io/badge/🤗%20Hugging%20Face%20-Model-green)](https://huggingface.co/collections/Daniellesry/dkt-models) 
@@ -18,7 +18,7 @@
 </div>
  
 
-<!-- [![Paper](https://img.shields.io/badge/arXiv-PDF-b31b1b)](https://arxiv.org/abs/2406.16864)  -->
+
 ## 🌟 Takeaways
 
 DKT is a foundation model for **transparent-object 🫙**, **in-the-wild 🌎**, **arbitrary-length ⏳** video depth and normal estimation, facilitating downstream applications such as robot manipulation tasks, policy learning, and so forth.
@@ -102,7 +102,12 @@ save_video(prediction['colored_depth_map'], output_path, fps=25)
 
 ## 📜 Citation
 ```
-...
+@article{dkt2025,
+  title   = {Diffusion Knows Transparency: Repurposing Video Diffusion for Transparent Object Depth and Normal Estimation},
+  author  = {Shaocong Xu and Songlin Wei and Qizhe Wei and Zheng Geng and Hong Li and Licheng Shen and Qianpu Sun and Shu Han and Bin Ma and Bohan Li and Chongjie Ye and Yuhang Zheng and Nan Wang and Saining Zhang and Hao Zhao},
+  journal = {https://arxiv.org/abs/2512.23705},
+  year    = {2025}
+}
 ```
 
 
