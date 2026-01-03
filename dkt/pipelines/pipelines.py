@@ -796,10 +796,10 @@ class DKTPipeline:
             torch_dtype=torch.bfloat16,
             device=device,
             model_configs=[
-                ModelConfig(model_id="PAI/Wan2.1-Fun-14B-Control", origin_file_pattern="diffusion_pytorch_model*.safetensors", offload_device="cpu"),
-                ModelConfig(model_id="PAI/Wan2.1-Fun-14B-Control", origin_file_pattern="models_t5_umt5-xxl-enc-bf16.pth", offload_device="cpu"),
-                ModelConfig(model_id="PAI/Wan2.1-Fun-14B-Control", origin_file_pattern="Wan2.1_VAE.pth", offload_device="cpu"),
-                ModelConfig(model_id="PAI/Wan2.1-Fun-14B-Control", origin_file_pattern="models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth", offload_device="cpu"),
+                ModelConfig(model_id="alibaba-pai/Wan2.1-Fun-14B-Control", origin_file_pattern="diffusion_pytorch_model*.safetensors", offload_device="cpu"),
+                ModelConfig(model_id="alibaba-pai/Wan2.1-Fun-14B-Control", origin_file_pattern="models_t5_umt5-xxl-enc-bf16.pth", offload_device="cpu"),
+                ModelConfig(model_id="alibaba-pai/Wan2.1-Fun-14B-Control", origin_file_pattern="Wan2.1_VAE.pth", offload_device="cpu"),
+                ModelConfig(model_id="alibaba-pai/Wan2.1-Fun-14B-Control", origin_file_pattern="models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth", offload_device="cpu"),
             ],
             redirect_common_files=False,
             training_strategy="origin",
@@ -830,22 +830,22 @@ class DKTPipeline:
             device=device,
             model_configs=[
                 ModelConfig(
-                    model_id="PAI/Wan2.1-Fun-1.3B-Control",
+                    model_id="alibaba-pai/Wan2.1-Fun-1.3B-Control",
                     origin_file_pattern="diffusion_pytorch_model*.safetensors",
                     offload_device="cpu",
                 ),
                 ModelConfig(
-                    model_id="PAI/Wan2.1-Fun-1.3B-Control",
+                    model_id="alibaba-pai/Wan2.1-Fun-1.3B-Control",
                     origin_file_pattern="models_t5_umt5-xxl-enc-bf16.pth",
                     offload_device="cpu",
                 ),
                 ModelConfig(
-                    model_id="PAI/Wan2.1-Fun-1.3B-Control",
+                    model_id="alibaba-pai/Wan2.1-Fun-1.3B-Control",
                     origin_file_pattern="Wan2.1_VAE.pth",
                     offload_device="cpu",
                 ),
                 ModelConfig(
-                    model_id="PAI/Wan2.1-Fun-1.3B-Control",
+                    model_id="alibaba-pai/Wan2.1-Fun-1.3B-Control",
                     origin_file_pattern="models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth",
                     offload_device="cpu",
                 ),

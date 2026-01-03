@@ -9,7 +9,7 @@ from PIL import Image
 from loguru import logger
 from tqdm import tqdm
 from tools.common_utils import save_video
-from dkt.pipelines.pipeline import DKTPipeline, ModelConfig
+from dkt.pipelines.pipelines import DKTPipeline, ModelConfig
 
 
 import cv2
@@ -26,7 +26,6 @@ import glob
 import datetime
 import shutil
 import tempfile
-import spaces
 import time
 
 
