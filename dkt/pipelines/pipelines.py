@@ -769,7 +769,7 @@ class DKTPipeline:
         else:
             if model_path is None:
                 if is_depth: #* 1.3B depth model
-                    model_path = 'Daniellesry/DKT-Depth-1-3B'
+                    model_path = 'Daniellesry/DKT-Depth-1-3B-v1.1'
                 else:#* 1.3B normal Model
                     raise ValueError("1.3B normal model is not available")
                     model_path = ...
@@ -961,10 +961,11 @@ class DKTPipeline:
 
 
         if vis_pc and self.prompt == 'depth':
-            vis_pc_num = 4
-            indices = np.linspace(0, frame_length-1, vis_pc_num)
-            indices = np.round(indices).astype(np.int32)
-            return_dict['point_clouds'] = self.prediction2pc(prediced_depth_map_np, origin_frames, indices)
+            # vis_pc_num = 4
+            # indices = np.linspace(0, frame_length-1, vis_pc_num)
+            # indices = np.round(indices).astype(np.int32)
+            # return_dict['point_clouds'] = self.prediction2pc(prediced_depth_map_np, origin_frames, indices)
+            return_dict['point_clouds'] = self.prediction2pc_v2(prediced_depth_map_np, origin_frames)
 
         if return_rgb:
             return_dict['rgb_frames'] = origin_frames
@@ -1017,10 +1018,14 @@ class DKTPipeline:
 
 
     
-    def prediction2pc_v2(self, prediction_depth_map, RGB_frames, indices, return_pcd = True,nb_neighbors = 20, std_ratio = 3.0):
+    def prediction2pc_v2(self, prediction_depth_map, RGB_frames, indices=None, return_pcd = True,nb_neighbors = 20, std_ratio = 3.0):
         """
             call MoGe once 
         """
+
+        if indices is None:
+            indices = list(range(len(RGB_frames)))
+            
         resize_W,resize_H = RGB_frames[0].size
         pcds = []
         moge_device = self.moge_pipe.device if self.moge_pipe is not None else torch.device("cuda:0")

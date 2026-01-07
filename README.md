@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 ## 🤖 Gradio Demo
 
-- Online demo: [DKT](https://huggingface.co/spaces/Daniellesry/DKT-1)
+- Online demo: [DKT](https://huggingface.co/spaces/Daniellesry/DKT)
 - Local demo: 
 ```
 python app.py
@@ -87,7 +87,7 @@ from tools.common_utils import save_video
 pipe = DKTPipeline()
 
 demo_path = 'examples/1.mp4'
-prediction = pipe(demo_path)
+prediction = pipe(demo_path,vis_pc = False)  #* Set vis_pc to `True` to obtain the estimated point cloud.
 
 
 save_dir = 'logs'
@@ -98,6 +98,7 @@ save_video(prediction['colored_depth_map'], output_path, fps=25)
 
 
 ```
+
 
 
 ## 📜 Citation
