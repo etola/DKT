@@ -1,7 +1,7 @@
 ## ___***Diffusion Knows Transparency: Repurposing Video Diffusion for Transparent Object Depth and Normal Estimation***___
 [Shaocong Xu](https://scholar.google.com/citations?user=PvYOrK0AAAAJ&hl=zh-CN), [Songlin Wei](https://songlin.github.io/), [Qizhe Wei](#), [Zheng Geng](#), [Hong Li](https://scholar.google.com/citations?user=5FBYzP8AAAAJ&hl=en), [Licheng Shen](#), [Qianpu Sun](https://scholar.google.com/citations?user=cVjaTlMAAAAJ&hl=zh-CN), [Shu Han](https://scholar.google.com/citations?user=qZGkubsAAAAJ&hl=zh-CN), [Bin Ma](#), [Bohan Li](https://scholar.google.com/citations?user=V-YdQiAAAAAJ&hl=zh-CN), [Chongjie Ye](https://scholar.google.com/citations?user=hP4G9iUAAAAJ&hl=en), [Yuhang Zheng](https://scholar.google.com/citations?user=Wn2Aic0AAAAJ&hl=en), [Nan Wang](https://scholar.google.com/citations?user=BWfLE6EAAAAJ&hl=zh-CN), [Saining Zhang](https://scholar.google.com/citations?user=P4efBMcAAAAJ&hl=zh-CN), and [Hao Zhao](https://scholar.google.com/citations?user=ygQznUQAAAAJ&hl=en)
 
-<!-- <h3 align="center"> published conference</h3> -->
+ <h3 align="center"> ICRA 2026</h3>
 
 <div align="center">
 
