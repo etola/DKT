@@ -26,6 +26,7 @@ DKT is a foundation model for **transparent-object 🫙**, **in-the-wild 🌎**,
 ![teaser](doc/main-teaser.png)
 
 ## ✨ News
+- `[26-01-31]`  🔥🔥🔥 **DKT** is accepted to ICRA2026.
 - `[25-12-04]`  🔥🔥🔥 **DKT** is released now, have fun!
 
 
